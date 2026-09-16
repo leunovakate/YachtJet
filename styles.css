@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0e1823;
+}
+
+header {
+  position: absolute;
+  top: 32px;
+  left: 0;
+
+  width: 100%;
+  z-index: 999;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.header-wrapper {
+  background-color: white;
+  padding: 0 30px;
+  border-radius: 8px;
+  width: 1240px;
+  height: 48px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-wrapper p {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  color: #1b414b;
+}
+
+nav {
+  display: flex;
+  gap: 4px;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: rgba(27, 65, 75, 0.5);
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-transform: uppercase;
+
+  font-size: 10px;
+  color: #fbfbfb;
+
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #1b414b;
+}
+
+.header-socials {
+  display: flex;
+  gap: 8px;
+}
+
+.header-socials a {
+  transition: transform 0.2s ease;
+}
+
+.header-socials a:hover {
+  transform: scale(1.15);
+}
+
+/* ------------------------------------------------------- */
+
+.hero {
+  position: relative;
+
+  background-image:
+    linear-gradient(
+      358.99deg,
+      rgba(17, 19, 31, 0.8) 42.64%,
+      rgba(17, 19, 31, 0.31) 83.98%,
+      rgba(17, 19, 31, 0) 99.74%
+    ),
+    url(./images/hero-image.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 800px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  flex-direction: column;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  width: 1000px;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 1;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.hero-content p {
+  width: 600px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.7);
+}
+
+.hero-btn {
+  border-radius: 15px;
+  padding: 16px 40px;
+  width: 179px;
+  height: 52px;
+  text-decoration: none;
+  text-align: center;
+  color: #fbfbfb;
+  background-color: #1b414b;
+  margin-top: 20px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hero-btn:hover {
+  background-color: #fbfbfb;
+  color: #1b414b;
+  transform: scale(1.05);
+  font-weight: 550;
+}
+
+/* ---------------------------------------------------------- */
+
+.about {
+  background-color: #fbfbfb;
+  border-radius: 24px;
+  width: 1340px;
+  height: 675px;
+
+  margin: 0 auto 170px;
+  transform: translateY(-50px);
+}
+
+.about-wrapper {
+  padding: 50px 60px;
+  color: #1b414b;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-wrapper h2 {
+  width: 540px;
+}
+
+.about-content {
+  width: 400px;
+
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  font-size: 23px;
+  color: #1b414b;
+}
+
+.about-content-txt {
+  color: #040306;
+  opacity: 0.4;
+  font-size: 15px;
+  margin-bottom: 40px;
+
+  line-height: 1.15;
+}
+
+.about img {
+  height: 470px;
+  width: 100%;
+  border-radius: 24px;
+
+  object-fit: cover;
+  display: block;
+}
+
+/* ------------------------------------------------------------------- */
+
+.yachts-wrapper {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto 50px;
+  flex-wrap: wrap;
+}
+
+.yachts-sec h2 {
+  color: #fbfbfb;
+  text-align: center;
+  margin: 0 auto;
+  width: 715px;
+  margin-bottom: 75px;
+}
+
+.yachts-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.yacht-card {
+  width: 392px;
+  height: auto;
+  background-color: #fbfbfb;
+  border-radius: 24px;
+  padding: 16px 16px 32px 16px;
+}
+
+.card-content-wrapper {
+  padding: 16px 16px 0 16px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  margin-bottom: 16px;
+
+  padding-bottom: 16px;
+}
+
+.card-content::after {
+  background-color: rgba(4, 3, 6, 0.1);
+  content: "";
+  width: 100%;
+  height: 1px;
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+}
+
+.card-content h3 {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #1b414b;
+}
+
+.card-content p {
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #040306;
+  opacity: 0.4;
+}
+
+.card-info-list {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}
+
+.card-info-list li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(4, 3, 6, 0.4);
+  white-space: nowrap;
+
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+
+.card-info-row {
+  color: #040306;
+}
+
+.yachts-sec-btn {
+  text-decoration: none;
+  color: #fbfbfb;
+  margin: 0 auto 150px;
+  border: 1px solid rgba(251, 251, 251, 0.35);
+  border-radius: 15px;
+  padding: 16px 40px;
+  width: 179px;
+  height: 52px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.yachts-sec-btn:hover {
+  background-color: #fbfbfb;
+  color: #1b414b;
+  transform: scale(1.05);
+  font-weight: 550;
+}
