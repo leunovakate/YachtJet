@@ -6,6 +6,7 @@
 
     <link rel="icon" type="png" href="./images/favicon.png" />
     <link rel="stylesheet" href="./styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,11 +14,17 @@
       rel="stylesheet"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.26/dist/lenis.css"
+    />
+
     <title>YachtJet</title>
   </head>
   <body>
-    <header>
-      <div class="header-wrapper">
+    <header id="header">
+      <div class="header-wrapper" data-aos="fade-up" data-aos-duration="1500">
         <p>yachtjet</p>
         <nav class="header-nav">
           <a href="#about">About</a>
@@ -53,29 +60,43 @@
       </section>
 
       <section class="about" id="about">
-        <div class="about-wrapper">
-          <h2>YachtJet fleet is here to take you on the ultimate adventure</h2>
-          <div class="about-content">
-            <p>
-              From spacious decks to state-of-the-art technology, our yachts are
-              designed to provide the perfect blend of luxury and functionality.
-            </p>
-            <p class="about-content-txt">
-              Take a look at our selection below and choose the yacht that
-              matches your needs and preferences.No matter which yacht you
-              choose, our experienced crew will ensure that your journey is
-              smooth and enjoyable. Book now and get ready for an unforgettable
-              adventure on the high seas.
-            </p>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
+          <div class="about-wrapper">
+            <h2>
+              YachtJet fleet is here to take you on the ultimate adventure
+            </h2>
+            <div class="about-content">
+              <p>
+                From spacious decks to state-of-the-art technology, our yachts
+                are designed to provide the perfect blend of luxury and
+                functionality.
+              </p>
+              <p class="about-content-txt">
+                Take a look at our selection below and choose the yacht that
+                matches your needs and preferences.No matter which yacht you
+                choose, our experienced crew will ensure that your journey is
+                smooth and enjoyable. Book now and get ready for an
+                unforgettable adventure on the high seas.
+              </p>
+            </div>
           </div>
+          <img src="./images/about-image.png" />
         </div>
-        <img src="./images/about-image.png" />
       </section>
 
       <section class="yachts-sec" id="yachts">
         <h2>Choose your dream yacht and sail away into the sunset</h2>
 
-        <div class="yachts-wrapper">
+        <div
+          class="yachts-wrapper"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
           <div class="yacht-card">
             <img src="./images/card-1.png" />
 
@@ -138,7 +159,12 @@
       </section>
 
       <section class="activities">
-        <div class="activities-content">
+        <div
+          class="activities-content"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
           <ul class="activities-list">
             <li class="activities-item">
               <p>01</p>
@@ -170,7 +196,13 @@
         </div>
       </section>
 
-      <section class="form" id="form">
+      <section
+        class="form"
+        id="form"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
         <img src="./images/form-image.png" />
 
         <div class="form-content">
@@ -228,7 +260,12 @@
         </div>
 
         <div class="review-block-wrapper">
-          <div class="review-card-wrapper">
+          <div
+            class="review-card-wrapper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+          >
             <img src="./images/author-1.png" />
 
             <div class="review-card-content">
@@ -242,7 +279,12 @@
             </div>
           </div>
 
-          <div class="review-card-wrapper">
+          <div
+            class="review-card-wrapper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+          >
             <img src="./images/author-2.png" />
 
             <div class="review-card-content">
@@ -256,7 +298,12 @@
             </div>
           </div>
 
-          <div class="review-card-wrapper">
+          <div
+            class="review-card-wrapper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+          >
             <img src="./images/author-3.png" />
 
             <div class="review-card-content">
@@ -305,5 +352,26 @@
         </div>
       </div>
     </footer>
+
+    <a class="btn-to-top" href="#header"
+      ><img src="./images/arrow-to-top.svg" />
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+    <script>
+      new Lenis({
+        autoRaf: true,
+        autoToggle: true,
+        anchors: true,
+        allowNestedScroll: true,
+        naiveDimensions: true,
+        stopInertiaOnNavigate: true,
+      });
+    </script>
   </body>
 </html>
