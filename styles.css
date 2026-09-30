@@ -68,7 +68,7 @@ p {
   padding: 0 30px;
 
   border-radius: 8px;
-  width: 1200px;
+  width: 1100px;
   height: 48px;
 
   display: flex;
@@ -76,6 +76,8 @@ p {
   align-items: center;
 
   margin: 32px auto 0;
+
+  border-bottom: 1px solid #506267;
 }
 
 .header-wrapper p {
@@ -663,7 +665,7 @@ input.iti__tel-input {
 .footer-wrapper {
   background-color: #1b414b;
   border-radius: 24px 24px 0 0;
-  width: 100%;
+  width: 95%;
   max-width: 1390px;
 
   display: flex;
@@ -806,9 +808,291 @@ input.iti__tel-input {
     inset 0 1px 1px rgba(255, 255, 255, 0.35),
     0 12px 30px rgba(4, 3, 6, 0.3);
 }
+/* 
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+} */
 
-@media (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .header-wrapper {
-    width: 800px;
+    width: 704px;
+  }
+
+  .hero-content h1 {
+    width: 704px;
+  }
+
+  /* ----------------------------------------------------------------- */
+
+  .about img {
+    width: 705px;
+    height: 470px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .about-wrapper h2 {
+    margin-bottom: 50px;
+  }
+
+  .about {
+    width: 704px;
+    height: 675px;
+  }
+
+  /* -------------------------------------------------------------------- */
+
+  .yachts-sec h2 {
+    margin-top: 140px;
+    max-width: 645px;
+  }
+
+  .yacht-card:last-child {
+    display: none;
+  }
+
+  .yacht-card {
+    width: 336px;
+  }
+
+  .yacht-card img {
+    width: 304px;
+  }
+
+  .card-info-list li {
+    grid-template-columns: 180px 1fr;
+  }
+
+  /* -------------------------------------------------------------------- */
+
+  .activities-content {
+    flex-direction: column;
+  }
+
+  .activities-list {
+    width: 704px;
+  }
+
+  .activities-content img {
+    width: 704px;
+  }
+
+  /* ----------------------------------------------------------------- */
+
+  .form {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .form img {
+    width: 704px;
+  }
+
+  /* ----------------------------------------------------------------- */
+
+  .review-content h2 {
+    width: 704px;
+  }
+
+  .review-card-wrapper:last-child {
+    display: none;
+  }
+
+  .review-card-wrapper {
+    width: 336px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-wrapper {
+    width: 334px;
+  }
+
+  .header-nav,
+  .header-socials {
+    display: none;
+  }
+
+  .hero-content h1 {
+    width: 335px;
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    width: 335px;
+    font-size: 12px;
+  }
+
+  .hero-btn {
+    font-size: 14px;
+    padding: 14px 32px;
+    width: 145px;
+    align-content: center;
+  }
+  /* ----------------------------------------------------------------- */
+
+  .about img {
+    width: 335px;
+    height: 395px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    padding: 40px 20px 0;
+  }
+
+  .about-wrapper h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+    width: 295px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+  }
+
+  .about-content {
+    width: 295px;
+  }
+
+  .about-content .about-content-txt {
+    font-size: 12px;
+  }
+
+  .about {
+    width: 335px;
+    height: 675px;
+    margin-bottom: 100px;
+  }
+
+  /* -------------------------------------------------------------------- */
+
+  .yachts-sec h2 {
+    max-width: 320px;
+    font-size: 28px;
+  }
+
+  .yacht-card:not(:first-child) {
+    display: none;
+  }
+
+  .yacht-card {
+    width: 336px;
+  }
+
+  .yacht-card img {
+    width: 304px;
+  }
+
+  .card-info-list li {
+    grid-template-columns: 160px 1fr;
+  }
+
+  /* -------------------------------------------------------------------- */
+
+  .activities-content {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .activities-list {
+    grid-template-columns: 1fr;
+    width: 335px;
+    height: auto;
+    padding: 50px 30px;
+  }
+
+  .activities-content img {
+    width: 335px;
+  }
+
+  .activities-item p {
+    font-size: 28px;
+  }
+  /* ----------------------------------------------------------------- */
+
+  .form {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .form-content h2 {
+    font-size: 28px;
+  }
+
+  .form img {
+    width: 335px;
+  }
+
+  .form-btn {
+    width: 122px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .request-form {
+    width: 335px;
+  }
+
+  /* ----------------------------------------------------------------- */
+
+  .review-content h2 {
+    font-size: 28px;
+    width: 335px;
+  }
+
+  .review-content p {
+    width: 335px;
+  }
+
+  .review-card-wrapper:not(:first-child) {
+    display: none;
+  }
+
+  .review-card-wrapper {
+    width: 336px;
+  }
+
+  /* ---------------------------------------------------------------------- */
+
+  .footer-nav-wrapper {
+    flex-wrap: wrap;
+    row-gap: 80px;
+  }
+
+  .footer-wrapper {
+    padding: 40px 30px;
+    gap: 50px;
+  }
+
+  .footer-nav a {
+    padding: 15px 12px;
+    font-size: 9px;
+  }
+
+  .footer-socials {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-txt {
+    font-size: 18px;
+  }
+
+  .footer-bottom-info {
+    font-size: 12px;
+  }
+
+  .btn-to-top {
+    width: 50px;
+    height: 50px;
   }
 }
